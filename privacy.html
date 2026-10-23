@@ -1,116 +1,105 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>隐私政策 - zoog-vpn.mom 严苛零日志与纯内存架构承诺</title>
-  <meta name="description" content="zoog-vpn.mom 严格无日志隐私政策（Strict Zero-Logs Policy），详述我们如何通过无盘 RAM 架构与端到端加密保护用户真实网络隐私。">
+  <title>隐私政策 - zoog-vpn.mom 严格零日志与纯内存无盘保障</title>
+  <meta name="description" content="了解 zoog-vpn.mom 的严格零日志（Strict Zero-Logs）隐私政策，纯内存无盘架构如何捍卫您的数字隐私。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://zoog-vpn.mom/privacy.html">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="index.html" class="brand-logo" aria-label="zoog-vpn.mom 首页">
-          <div class="logo-badge">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-            </svg>
-          </div>
-          <span>zoog-vpn<span class="domain-mom">.mom</span></span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="index.html#features">核心优势</a></li>
-          <li><a href="index.html#pricing">套餐价格</a></li>
-          <li><a href="insights.html">推荐资讯<span class="nav-tag-badge">HOT</span></a></li>
-        </ul>
-        <div class="nav-cta-group">
-          <a href="https://vip06.flyvaff.com/#/?code=QKMquNHW" target="_blank" rel="nofollow" class="btn-nav-primary">立即获取</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="zoog-vpn.mom 首页">
+        <div class="bolt-badge-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
         </div>
-      </div>
-    </div>
-  </header>
+        <span>zoog-vpn<span class="domain-highlight">.mom</span></span>
+      </a>
 
-  <header class="subpage-hero">
-    <div class="container">
-      <span class="pill-eyebrow">DATA PRIVACY</span>
-      <h1>隐私政策 (Privacy Policy)</h1>
-      <p>生效日期：2026年1月1日 · 严苛践行零日志信条，用纯内存架构捍卫您的数字隐私</p>
-    </div>
-  </header>
-
-  <main class="container prose-article">
-    <section>
-      <h2>一、核心承诺：绝不保留用户使用日志 (Strict Zero-Logs Policy)</h2>
-      <p>
-        在 <strong>zoog-vpn.mom</strong>，保护用户隐私是我们工程设计的基石。我们向全球用户郑重承诺：<strong>我们绝不收集、绝不记录、绝不存储、绝不监控任何用户的网络使用活动日志。</strong>
-      </p>
-      <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px; margin: 20px 0;">
-        <h3>明确绝不记录的内容清单（We DO NOT Record）：</h3>
-        <ul>
-          <li><strong>绝不记录浏览历史：</strong> 不记录您访问的任何具体网址、域名、Web 页面或应用程序内容。</li>
-          <li><strong>绝不记录传输数据：</strong> 不拦截、不解密、不存储任何网络传输数据包。</li>
-          <li><strong>绝不记录连接时间戳：</strong> 不记录用户连入或断开节点的具体时间与时长。</li>
-          <li><strong>绝不记录真实 IP：</strong> 不记录用户的本地公网原始真实 IP。</li>
-          <li><strong>绝不记录 DNS 解析：</strong> DNS 请求通过私有零知识解析器实时处理后立即丢弃。</li>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html#engine" class="nav-link">专线引擎</a></li>
+          <li><a href="index.html#features" class="nav-link">六大特性</a></li>
+          <li><a href="index.html#pricing" class="nav-link">方案价格</a></li>
+          <li><a href="index.html#faq" class="nav-link">常见问题</a></li>
+          <li><a href="insights.html" class="nav-link">推荐资讯<span class="nav-badge-hot">HOT</span></a></li>
         </ul>
-      </div>
-    </section>
+      </nav>
 
-    <section>
-      <h2>二、技术实现：全 RAM 内存无盘服务器</h2>
-      <p>
-        我们的隐私保护直接落实于硬件与底层操作系统层级：
-      </p>
-      <ul>
-        <li><strong>无盘化系统启动：</strong> 所有专线中继节点均从易失性 RAM（随机存取内存）中引导并驻留，系统禁用了物理固态硬盘或机械硬盘的永久写入日志通道。</li>
-        <li><strong>重启物理销毁：</strong> 一旦服务器重启或维护，所有运行态系统数据与内存碎片瞬间物理性消失，无法复原。</li>
-        <li><strong>Linux `/dev/null` 重定向：</strong> 访问管道输出直接定向至空设备，实现实时丢弃。</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>三、极小化账号数据收集</h2>
-      <p>
-        为保障账户创建与订单开通，我们仅加密保存最小化服务信息：
-      </p>
-      <ul>
-        <li><strong>电子邮箱地址：</strong> 仅用于发送订阅重置与系统必要通知，支持匿名加密邮箱。</li>
-        <li><strong>订阅配额统计：</strong> 仅用于计算当前计费周期的剩余可用流量与会员有效期。</li>
-      </ul>
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="https://vip06.flyvaff.com/#/?code=QKMquNHW" target="_blank" rel="nofollow" class="btn-aurora-glow">
-          开启受零日志保护的安全加速
+      <div class="nav-actions">
+        <a href="https://vip06.flyvaff.com/#/?code=QKMquNHW" target="_blank" rel="nofollow" class="header-cta-btn">
+          <span>立即起飞</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
         </a>
       </div>
-    </section>
+    </div>
+  </header>
+
+  <div class="subpage-turbo-banner">
+    <div class="container">
+      <div class="hud-tag">
+        <span class="hud-pulse-dot"></span>
+        <span>PRIVACY POLICY</span>
+      </div>
+      <h1>隐私保护政策 (Privacy Policy)</h1>
+      <p>严格践行零日志准则，以物理硬件架构确保您的数据自由与隐私</p>
+    </div>
+  </div>
+
+  <main class="subpage-turbo-content">
+    <div class="container article-turbo-prose">
+      <section>
+        <h2>1. 核心承诺：严格无日志 (Strict Zero-Logs)</h2>
+        <p>
+          在 <strong>zoog-vpn.mom</strong>，我们视用户隐私为不可逾越的底线：
+        </p>
+        <ul>
+          <li><strong>绝不记录</strong> 您的真实来源 IP 地址与地理定位。</li>
+          <li><strong>绝不记录</strong> 您的网络访问目标网址、流量内容或 DNS 查询记录。</li>
+          <li><strong>绝不向任何第三方透露</strong> 用户的行为记录。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2. 纯内存（RAM-Only）运行机制</h2>
+        <p>
+          我们部署的所有专线服务器均剔除了物理机械硬盘与 SSD。系统完全在内存中只读加载运行。服务器断电重启后，内存中的所有运行态临时数据瞬间被彻底物理抹除，杜绝任何数据留存可能。
+        </p>
+      </section>
+    </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer-simple">
+  <footer class="site-footer-turbo">
     <div class="container">
-      <div class="footer-inner">
+      <div class="footer-top-turbo">
         <div class="brand-logo">
-          <div class="logo-badge">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          <div class="bolt-badge-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
             </svg>
           </div>
-          <span>zoog-vpn<span class="domain-mom">.mom</span></span>
+          <span>zoog-vpn<span class="domain-highlight">.mom</span></span>
         </div>
-        <ul class="footer-links-strict">
+
+        <ul class="footer-nav-4">
           <li><a href="sitemap.html" target="_blank">网站地图</a></li>
           <li><a href="about.html" target="_blank">关于我们</a></li>
           <li><a href="terms.html" target="_blank">服务条款</a></li>
           <li><a href="privacy.html" target="_blank">隐私政策</a></li>
         </ul>
       </div>
-      <div class="footer-copy">
-        <p>© 2026 zoog-vpn.mom. 保留所有权利。</p>
+
+      <div class="footer-bottom-turbo">
+        <p>© 2026 zoog-vpn.mom. 保留所有权利。电竞级网络加速引擎架构。</p>
+        <p>严苛零日志认证 · 全球 BGP / IPLC 物理专线中继</p>
       </div>
     </div>
   </footer>
